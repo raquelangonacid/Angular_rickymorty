@@ -1,0 +1,23 @@
+<body>
+
+    <main>
+        <figure *ngIf="element">
+            <img src="{{ element.image }}" alt="{{ element.name }}" />
+            <div>
+                <h2>{{ element.name }}</h2>
+                <p>Gender: {{ element.gender }}</p>
+                <p>Species: {{ element.species }}</p>
+            </div>
+        
+        <p *ngIf="!element">Loading</p>
+        </figure>
+    </main>
+
+    <div class="button">
+        <button>
+        <a routerLink="../">BACK</a>
+        </button>
+    </div>
+
+</body>
+
